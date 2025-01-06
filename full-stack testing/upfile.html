@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offer Letter Repository</title>
+  <link rel="stylesheet" href="upfile.css">
+</head>
+<body>
+  <div class="container"> 
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#"><img src="C:\Users\kavin kishore\OneDrive\Pictures\Screenshots\Screenshot 2024-05-01 122958.png" alt="Not supported"></a></li>
+        <br>
+        <li><a href="dash1.html">Profile</a></li> 
+        <li><a href="upfile.html">Upload Files</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+
+    <main class="mainbar">
+      <nav class="topbar">Upload File</nav>
+      
+      <div class="upload-section">
+        <form id="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
+          <div class="file-upload">
+            <div class="dropdown">
+              <label for="file-type">Job or Internship:</label>
+              <select id="file-type">
+                <option value="">Choose a type</option>
+                <option value="">Job</option>
+                <option value="">Internship</option>
+              </select>
+            </div>
+            <br>
+
+            <div class="dropdown">
+              <label for="file-type">Type of Company:</label>
+              <select id="file-type">
+                <option value="">Choose a type</option>
+                <option value="">IT(Eg: softWare)</option>
+                <option value="">Core</option>
+              </select>
+            </div>
+            <br>
+
+            <div class="dropdown">  
+              <label for="file-type">Company name:</label>
+              <input type="text" id="company-type" placeholder="Name of the Company">         
+              </div>
+            
+            <label for="upload-file">Select File:</label>
+            <input type="file" id="upload-file" accept=".pdf,.docx">
+          </div>
+
+          <button type="submit" id="upload-btn">Upload</button>
+        </form>
+      </div>
+      
+      <div class="student-info"> 
+      </div>
+    </main>
+  </div>
+</body>
+</html>

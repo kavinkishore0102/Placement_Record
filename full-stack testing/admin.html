@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Student Filters</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="container"> 
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#"><img src="D:\full-stack testing\png-transparent-letter-alphabet-symbol-t-angle-english-text.png" alt="Not supported"></a></li>
+        <br>
+        <li><a href="dash1.html">Dashboard</a></li>
+        <li><a href="upfile.html">Upload Files</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+
+    <main class="mainbar">
+      <nav class="topbar">Admin - Filter Students</nav>
+      
+      <div class="filter-section">
+        <form id="filter-form">
+          <h3>Filter Students By:</h3>
+          
+          <!-- Filter by City -->
+          <div class="filter-item">
+            <label for="city">City:</label>
+            <select id="city" name="city">
+              <option value="">Select City</option>
+              <option value="New York">New York</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Chicago">Chicago</option>
+              <option value="Houston">Houston</option>
+            </select>
+          </div>
+          <br>
+
+          <!-- Filter by Salary Package -->
+          <div class="filter-item">
+            <label for="salary">Salary Package:</label>
+            <select id="salary" name="salary">
+              <option value="">Select Salary Range</option>
+              <option value="20000-40000">20,000 - 40,000</option>
+              <option value="40001-60000">40,001 - 60,000</option>
+              <option value="60001-80000">60,001 - 80,000</option>
+              <option value="80001-100000">80,001 - 100,000</option>
+            </select>
+          </div>
+          <br>
+
+          <!-- Filter by Academic Theme -->
+          <div class="filter-item">
+            <label for="theme">Academic Theme:</label>
+            <select id="theme" name="theme">
+              <option value="">Select Theme</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Business">Business</option>
+              <option value="Arts">Arts</option>
+              <option value="Science">Science</option>
+            </select>
+          </div>
+          <br>
+
+          <button type="submit" id="filter-btn">Filter</button>
+        </form>
+      </div>
+
+      <div class="student-list">
+        <h3>Filtered Student Results:</h3>
+        <table id="student-table" border="1">
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              <th>City</th>
+              <th>Salary Package</th>
+              <th>Academic Theme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filtered student results will be populated here -->
+          </tbody>
+        </table>
+        <div class="download-section">
+          <button id="download-btn">Download Data</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  
+
+  <script src="admin.js"></script>
+</body>
+</html>
